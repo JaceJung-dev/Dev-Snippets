@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0 # Use the ref you want to point at
+    hooks:
+      - id: trailing-whitespace # 공백 제거
+      - id: end-of-file-fixer # 파일 끝의 newline 정리
+      - id: check-ast # Python AST 오류 검사
+      - id: check-yaml # YAML 문법 검사
+      - id: check-json # JSON 문법 검사
+      - id: check-toml # TOML 검사
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # ruff vs flake8 + isort + black
+    rev: v0.14.5
+    hooks:
+      # Run the linter.
+      - id: ruff-check
+        types_or: [python, pyi] # avoid running on Jupyter Notebook
+      #  args: [ --fix ]            # enable lint fix
+      # Run the formatter.
+      - id: ruff-format
+        types_or: [python, pyi] # avoid running on Jupyter Notebook
