@@ -17,6 +17,8 @@
 
 #### [로깅 설정](./python/logging/)
 
+#### [Pre-commit 설정](./python/pre-commit/)
+
 ## 📖 사용 방법
 
 1. **찾기**: 필요한 스니펫 찾기
