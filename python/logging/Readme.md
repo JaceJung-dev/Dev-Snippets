@@ -25,6 +25,7 @@ Python 프로젝트에서 빠르게 로깅 설정을 구성할 수 있는 재사
 
 ```bash
 pip install pyyaml
+# uv add pyyaml
 ```
 
 ### 사용 예시
